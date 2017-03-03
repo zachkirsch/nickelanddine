@@ -39,8 +39,8 @@
               return 1;
           return 0;
         });
-
-                $.get('/salesTax' + '?zip=' + query.zip, function(tax_rate) {
+                base_url = "https://quiet-mesa-7734.herokuapp.com";
+                $.get(base_url + '/salesTax' + '?zip=' + query.zip, function(tax_rate) {
                     if (orders.length == 0) {
                         $("#results-title")[0].innerText = "No Results";
                         $("#results-title").css("height", "430px");
