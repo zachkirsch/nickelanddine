@@ -23,16 +23,16 @@
     <script>
         $(document).ready(function () {
             var zip = "02155";
-			var my_lat = 0;
-			var my_lng = 0;
-            
+      var my_lat = 0;
+      var my_lng = 0;
+
             $("#search").click(function () {
                 if ($("#address").val() != "" && $("#fooditem").val() != "" && $("#budget").val() != "") {
                             params = "?" + "lat=" + my_lat + "&" + "lng=" + my_lng;
                             params += "&fooditem=" + $("#fooditem").val() + "&" + "zip=" + zip;
-                            window.location.href = "/results.html" + params;
+                            window.location.href = "results.html" + params;
 
-				}
+        }
             });
 
             $("#geo").click(function () {
@@ -43,7 +43,7 @@
                 var my_lng;
                 var address;
                 if (navigator.geolocation) { // the navigator.geolocation object is supported on your browser
-                    navigator.geolocation.getCurrentPosition(function (position) { // the function runs when user's location is tracked              
+                    navigator.geolocation.getCurrentPosition(function (position) { // the function runs when user's location is tracked
                         my_lat = position.coords.latitude;
                         my_lng = position.coords.longitude;
 
@@ -59,8 +59,8 @@
 
             });
         });
-        
-        
+
+
     </script>
 </head>
 
@@ -81,7 +81,7 @@
                 <a class="navbar-brand" href="#"><span>nickel and dine</span></a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/about.html">About</a>
+                    <li><a href="about.html">About</a>
                     </li>
                 </ul>
 

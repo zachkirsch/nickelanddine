@@ -31,7 +31,7 @@
                             lng = data.results[0].geometry.location.lng;
                             params = "?" + "lat=" + lat + "&" + "lng=" + lng;
                             params += "fooditem=" + $("#fooditem").val() + "&" + "budget=" + $("#budget").val();
-                            window.location.href = "/results.html" + params;
+                            window.location.href = "results.html" + params;
                         });
                 }
             });
@@ -44,7 +44,7 @@
                 var my_lng;
                 var address;
                 if (navigator.geolocation) { // the navigator.geolocation object is supported on your browser
-                    navigator.geolocation.getCurrentPosition(function (position) { // the function runs when user's location is tracked              
+                    navigator.geolocation.getCurrentPosition(function (position) { // the function runs when user's location is tracked
                         my_lat = position.coords.latitude;
                         my_lng = position.coords.longitude;
 
@@ -56,9 +56,9 @@
                             });
                     });
                 }
-                //		  else {
-                //		    $("body").append("<p>Geolocation is not supported by your web browser.  What a shame!</p>");
-                //		  }
+                //      else {
+                //        $("body").append("<p>Geolocation is not supported by your web browser.  What a shame!</p>");
+                //      }
 
             });
         });
@@ -79,23 +79,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html"><span>nickel and dine</span></a>
+                <a class="navbar-brand" href="index.html"><span>nickel and dine</span></a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">About</a>
                     </li>
                 </ul>
 
-            <!-- Collect the nav links, forms, and other content for toggling 
+            <!-- Collect the nav links, forms, and other content for toggling
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="button"><a href="/about.html">About <span class="sr-only">(current)</span></a></li>
-        
+        <li class="button"><a href="about.html">About <span class="sr-only">(current)</span></a></li>
+
       </ul>
-      
+
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/login.html">Login</a></li>
-        
+        <li><a href="login.html">Login</a></li>
+
       </ul>
     </div><!-- /.navbar-collapse -->
         </div>
@@ -110,7 +110,7 @@
                 <!-- <p>We live to serve, we aim to please, we don't put out but we sure will tease!</p> -->
 
 
-               
+
             </div>
         </div>
     </div>
